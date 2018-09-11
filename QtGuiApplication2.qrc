@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/QtGuiApplication2"/>
+    <qresource prefix="/photos">
+        <file alias="Block">Resources/Block.png</file>
+        <file alias="Box">Resources/box.png</file>
+        <file alias="Floor">Resources/Floor.jpg</file>
+        <file alias="Destination">Resources/捕获.PNG</file>
+        <file alias="Box2">Resources/Box2.PNG</file>
+        <file alias="D">Resources/Player_D.png</file>
+        <file alias="L">Resources/Player_L.png</file>
+        <file alias="R">Resources/Player_R.png</file>
+        <file alias="U">Resources/Player_U.png</file>
+    </qresource>
+</RCC>
