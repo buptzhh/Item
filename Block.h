@@ -1,9 +1,11 @@
 #pragma once
 #include <QtWidgets/QApplication>
-#include <QGraphicsPixmapItem>
+#include<QGraphicsRectItem>
 #include <QObject>
+#include <QBrush>
+#define Size 75
 
-class Block :public QObject, public QGraphicsPixmapItem {
+class Block :public QObject, public QGraphicsRectItem {
 	Q_OBJECT
 public:
 	Block(QGraphicsItem * parent = 0);

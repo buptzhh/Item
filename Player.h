@@ -1,12 +1,15 @@
 #pragma once
-#include <QGraphicsPixmapItem>
+
+#include<QGraphicsRectItem>
 #include <QObject>
 #include <QGraphicsItem>
+#define Size 75
+#define Step 75
 
-class Player :public QObject, public QGraphicsPixmapItem {
+class Player :public QObject, public QGraphicsRectItem {
 	Q_OBJECT
 public:
 	Player(QGraphicsItem * parent = 0);
-	~Player();
 	void keyPressEvent(QKeyEvent * event);
+	~Player();
 };

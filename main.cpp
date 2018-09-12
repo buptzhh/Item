@@ -5,7 +5,7 @@
 #include "Block.h"
 #include "Box.h"
 #include "Player.h"
-#include "Destination.h"
+#include "Spot.h"
 #include <QBrush>
 #include <QImage>
 
@@ -18,12 +18,12 @@ int main(int argc, char *argv[]) {
 	scene->setBackgroundBrush(QBrush(QImage(":/photos/Floor")));
 	
 	Block * block = new Block();
-	block->setPos(0,0);
+	block->setPos(150,150);
 	scene->addItem(block);
 	
-	Destination *destination = new Destination();
-	destination->setPos(150,150);
-	scene->addItem(destination);
+	Spot *spot = new Spot();
+	spot->setPos(375,375);
+	scene->addItem(spot);
 
 	Box *box = new Box();
 	box->setPos(300, 300);
