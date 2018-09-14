@@ -14,5 +14,6 @@
     <qresource prefix="/sound">
         <file alias="Move">Resources/123.WAV</file>
         <file alias="Arrival">Resources/Plastic Insert.WAV</file>
+        <file alias="Win">Resources/asd.wav</file>
     </qresource>
 </RCC>

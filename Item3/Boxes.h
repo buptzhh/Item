@@ -5,13 +5,14 @@
 #include <QBrush>
 #define Size 75
 
-class Box :public QObject, public QGraphicsRectItem {
+class Boxes :public QObject, public QGraphicsRectItem {
 	Q_OBJECT
 public:
-	Box(QGraphicsItem * parent = 0);
+	Boxes(QGraphicsItem * parent = 0);
 	void isArrival();
-	~Box();
+	~Boxes();
 	const bool getFlag();
 private:
 	bool flag = 0;          //flag用来判断box是否到达spot
+	static int count;      //计数器记录到达spot的boxes数量
 };
