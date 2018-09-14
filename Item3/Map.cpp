@@ -5,7 +5,7 @@
 Map::Map()
 {
 
-	setBackgroundBrush(QBrush(QImage("Resources/floor.jpg")));
+	setBackgroundBrush(QBrush(QImage(":/photos/Floor")));
 	//初始选关界面
 	//view->setScene(level);
 

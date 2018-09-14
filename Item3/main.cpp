@@ -14,7 +14,9 @@
 #include "Map3.h"
 #include "Map4.h"
 #include <qpushbutton.h>
-#include "Choose_Level.h"
+#include "LevelChoose.h"
+#include "LevelPass.h"
+#include "Parameter.h"
 
 
 int main(int argc, char *argv[]) {
@@ -25,7 +27,7 @@ int main(int argc, char *argv[]) {
 //	map->show();
 
 	QGraphicsScene* ch = new QGraphicsScene();
-	Choose_Level* c = new Choose_Level(ch);
+	LevelChoose* c = new LevelChoose(ch);
 	c->show();
 
 	return a.exec();

@@ -4,20 +4,19 @@
 #include<qgraphicsitem.h>
 #include<qpushbutton.h>
 #include"Map.h"
-#include"Map1.h"
-#include"Map2.h"
-#include"Map3.h"
-#include"Map4.h"
-class Choose_Level:public Map{
+
+class LevelChoose:public Map
+{
 	Q_OBJECT
 public:
-	Choose_Level(QGraphicsScene * scene);
-	~Choose_Level();
+	LevelChoose(QGraphicsScene * scene);
+	~LevelChoose();
 	
 
 public slots:
 
-void levelchoose();
+void levelChoose();
+void deleteButton();
 
 private:
 	QGraphicsScene * scene_;
