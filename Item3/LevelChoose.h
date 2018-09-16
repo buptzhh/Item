@@ -4,25 +4,23 @@
 #include<qgraphicsitem.h>
 #include<qpushbutton.h>
 #include"Map.h"
-
+#define levelNumber 4
 class LevelChoose:public Map
 {
 	Q_OBJECT
 public:
-	LevelChoose(QGraphicsScene * scene);
+	LevelChoose(QGraphicsScene * scene, const int &level);
 	~LevelChoose();
 	
 
 public slots:
 
-void levelChoose();
-void deleteButton();
+void levelChoose(const int &level);             //level为可选关卡
+
 
 private:
 	QGraphicsScene * scene_;
-	QPushButton* button1;
-	QPushButton* button2;
-	QPushButton* button3;
-	QPushButton* button4;
+	QPushButton* button[levelNumber];          //选关按钮
+
 };
 
