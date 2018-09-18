@@ -7,7 +7,7 @@ LevelChoose::LevelChoose(QGraphicsScene* scene, int level) {
 	scene_ = scene;
 	level_ = level;
 	scene->setSceneRect(0, 0, 1000, 1000);
-	setBackgroundBrush(QBrush(QImage(":/Player_1/Resources/Floor.png")));
+	setBackgroundBrush(QBrush(QImage(":/Player_1/Resources/wall.jpg")));
 
 	//去掉滚动栏
 	setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
@@ -26,10 +26,10 @@ void LevelChoose::levelChoose()
 		button3 = new QPushButton("level3", this);
 		button4 = new QPushButton("level4", this);
 
-		button1->setGeometry(QRect(100, 100, 100, 100));
-		button2->setGeometry(QRect(300, 100, 100, 100));
-		button3->setGeometry(QRect(500, 100, 100, 100));
-		button4->setGeometry(QRect(700, 100, 100, 100));
+		button1->setGeometry(QRect(100, 100, 200, 100));
+		button2->setGeometry(QRect(300, 100, 200, 100));
+		button3->setGeometry(QRect(500, 100, 200, 100));
+		button4->setGeometry(QRect(700, 100, 200, 100));
 
 		QObject::connect(button1, SIGNAL(clicked()), this, SLOT(createmap1()));
 		QObject::connect(button2, SIGNAL(clicked()), this, SLOT(createmap2()));
@@ -48,9 +48,9 @@ void LevelChoose::levelChoose()
 		button2 = new QPushButton("level2", this);
 		button3 = new QPushButton("level3", this);
 
-		button1->setGeometry(QRect(100, 100, 100, 100));
-		button2->setGeometry(QRect(300, 100, 100, 100));
-		button3->setGeometry(QRect(500, 100, 100, 100));
+		button1->setGeometry(QRect(100, 100, 200, 100));
+		button2->setGeometry(QRect(300, 100, 200, 100));
+		button3->setGeometry(QRect(500, 100, 200, 100));
 
 		QObject::connect(button1, SIGNAL(clicked()), this, SLOT(createmap1()));
 		QObject::connect(button2, SIGNAL(clicked()), this, SLOT(createmap2()));
@@ -66,8 +66,8 @@ void LevelChoose::levelChoose()
 		button1 = new QPushButton("level1", this);
 		button2 = new QPushButton("level2", this);
 
-		button1->setGeometry(QRect(100, 100, 100, 100));
-		button2->setGeometry(QRect(300, 100, 100, 100));
+		button1->setGeometry(QRect(100, 100, 200, 100));
+		button2->setGeometry(QRect(300, 100, 200, 100));
 
 		QObject::connect(button1, SIGNAL(clicked()), this, SLOT(createmap1()));
 		QObject::connect(button2, SIGNAL(clicked()), this, SLOT(createmap2()));
@@ -79,7 +79,7 @@ void LevelChoose::levelChoose()
 	else//初玩时，这样
 	{
 		button1 = new QPushButton("level1", this);
-		button1->setGeometry(QRect(100, 100, 100, 100));
+		button1->setGeometry(QRect(100, 100, 200, 100));
 		QObject::connect(button1, SIGNAL(clicked()), this, SLOT(createmap1()));
 		QObject::connect(button1, SIGNAL(clicked()), this, SLOT(deleteButton()));
 	}
